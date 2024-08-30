@@ -8,10 +8,15 @@
 cd /workspace
 git clone https://github.com/huggingface/diffusers && \
     cd diffusers && \
+    git checkout v0.28.2 && \
     pip install -e .
 cd -
 
 pip install peft==0.9.0 huggingface_hub[cli,torch]==0.21.4
 
 sudo mkdir -p /mnt/cache/
+
+sudo groupadd workbench
+
+groups
 sudo chown workbench:workbench /mnt/cache/
