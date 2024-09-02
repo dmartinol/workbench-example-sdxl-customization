@@ -16,7 +16,4 @@ pip install peft==0.9.0 huggingface_hub[cli,torch]==0.21.4
 
 sudo mkdir -p /mnt/cache/
 
-sudo groupadd workbench
-
-groups
-sudo chown workbench:workbench /mnt/cache/
+sudo chown workbench:20 /mnt/cache/
